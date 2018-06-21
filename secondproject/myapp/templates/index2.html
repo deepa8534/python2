@@ -1,0 +1,61 @@
+<html>
+<head>
+<title> registration</title>
+</head>
+<body>
+<p title> Register </p>
+<form action="" method="POST">
+    {% csrf_token %}
+
+<label> Name</label>
+<input type="text" name="first_name"><br>
+<label>Mobile </label>
+<input type="text" name="mobile" pattern="[789][0-9]{9}">
+<br>
+<label>Email </label>
+<input type="email" name="email"><br>
+<label>Courses</label>
+
+<label> Courses</label>
+
+<select  document.myform.formVar.value=this.value name="course">
+    <option value="Block Chain">Block chain</option>
+    <option value="Python">Python</option>
+    <option value="Big Data">Big Data</option>
+    <option value="Full stack">Full stack</option>
+    <option value="Digital Marketing">Digital Marketing</option>
+    <option value="Devops"> Devops</option>
+</select>
+<br>
+<label>Source </label>
+<select  name="source" document.myform.formVar.value=this.value>
+  <option value="Website">Website</option>
+    <option value="Facebook">Facebook</option>
+    <option value="sulekha">Sulekha</option>
+</select>
+<br>
+
+
+<label>Status</label>
+<select name="status" document.myform.formVar.value=this.value>
+     <option value="Demo">Demo</option>
+    <option value="counselling">Counselling</option>
+    <option value="Call Back">Call back</option>
+</select>
+<br>
+
+
+<label>Date</label>
+<input type="date" name="date"><br>
+
+
+<label>Counsler</label>
+<input type="text" name="counsler"><br>
+<!-- <input type="submit" name="join"><br> -->
+<label>Remark</label>
+<input type="text"  name="remark"><br>
+
+<input type="submit" value='POST'><br>
+</form>
+</body>
+</html>

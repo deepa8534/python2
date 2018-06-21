@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<table border="1">
+	<tr>
+		<td><b>id</b></td>
+		<td><b>name</b></td>
+		<td><b>mobile</b></td>
+		<td><b>email</b></td>
+		<td><b>course</b></td>
+		<td><b>source</b></td>
+		<td><b>Status</b></td>
+		<td><b>date</b></td>
+		<!-- <td><b>counsler</b></td> -->
+		<!-- <td><b>remark</b></td> -->
+	</tr>
+    {% for x in form %}
+    <tr>
+        <td>{{x.id}}</td>
+        <td>{{x.name}}</td>
+        <td>{{x.mobile}}</td>
+        <td>{{x.email}}</td>
+        <td>{{x.course}}</td>
+        <td>{{x.source}}</td>
+        <td>{{x.status}}</td>
+        <td>{{x.date}}</td>
+       <!--  <td><form action="http://172.24.25.63:7070/joining"method='POST'>
+        	 {% csrf_token %}
+
+        <input type = "submit" value='JOIN'style="color:white;background-color:green"/></form>{{x.counsler}}</td --><!-- > -->
+        <!-- <td><form><input type = "submit" /></form></td> -->
+       <!--  <td>{{x.remark}}</td>
+         -->
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
